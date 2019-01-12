@@ -11,3 +11,7 @@
     </div>
   </div>
 </div>
+
+<button class="btn btn-primary" (click)='clickity()'>Display Details</button>
+<p *ngIf="this.showing">Yo mama so fine... everyone in the neighborhood likes her as a person.</p>
+<p *ngFor="let e of log" [ngClass]="{whiteOnSomething: e.id>=5}" [ngStyle]="{'background-color': e.id>=5?'blue':'white'}">{{ e.id }} : {{ e.timestamp }}</p>
